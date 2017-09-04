@@ -133,6 +133,37 @@ class OSDParser extends SentenceParser implements OSDSentence {
 		return getDoubleValue(VESSEL_COURSE);
 	}
 
+    /*
+     * (non-Javadoc)
+     *
+     * @see net.sf.marineapi.nmea.sentence.TTMSentence#setCourse()
+     */
+    @Override
+    public void setCourse(double course) {
+        setDoubleValue(VESSEL_COURSE, course, 1, 1);
+//        setCharValue(UNITS, 'T');
+    }
+
+    /*
+     * (non-Javadoc)
+     *
+     * @see net.sf.marineapi.nmea.sentence.OSDSentence#getCourseReference()
+     */
+    @Override
+    public String getCourseReference() {
+        return getStringValue(COURSE_REFERENCE);
+    }
+
+    /*
+     * (non-Javadoc)
+     *
+     * @see net.sf.marineapi.nmea.sentence.TTMSentence#setCourseReference()
+     */
+    @Override
+    public void setCourseReference(String reference) {
+        setStringValue(COURSE_REFERENCE, reference);
+    }
+
 	/*
 	 * (non-Javadoc)
 	 *
@@ -143,20 +174,46 @@ class OSDParser extends SentenceParser implements OSDSentence {
 		return getDoubleValue(VESSEL_SPEED);
 	}
 
+    /*
+     * (non-Javadoc)
+     *
+     * @see net.sf.marineapi.nmea.sentence.OSDSentence#setSpeed()
+     */
+    @Override
+    public void setSpeed(double speed) {
+        setDoubleValue(VESSEL_SPEED, speed, 1, 1);
+        setCharValue(UNITS, 'N');
+    }
+
 	@Override
 	public String getSpeedReference() {
-		return null;
+		return getStringValue(SPEED_REFERENCE);
 	}
+
+    @Override
+    public void setSpeedReference(String reference) {
+        setStringValue(SPEED_REFERENCE, reference);
+    }
 
 	@Override
 	public double getSet() {
-		return 0;
+		return getDoubleValue(VESSEL_SET);
 	}
+
+    @Override
+    public void setSet(double set) {
+        setDoubleValue(VESSEL_SET, set);
+    }
 
 	@Override
 	public double getDrift() {
-		return 0;
+		return getDoubleValue(VESSEL_DRIFT);
 	}
+
+    @Override
+    public void setDrift(double drift) {
+        setDoubleValue(VESSEL_DRIFT, drift);
+    }
 
 	/*
 	 * (non-Javadoc)
@@ -166,66 +223,5 @@ class OSDParser extends SentenceParser implements OSDSentence {
 	@Override
 	public Units getUnits() {
 		return Units.valueOf(getCharValue(UNITS));
-	}
-
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see net.sf.marineapi.nmea.sentence.OSDSentence#getCourseReference()
-	 */
-	@Override
-	public String getCourseReference() {
-		return getStringValue(COURSE_REFERENCE);
-	}
-
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see net.sf.marineapi.nmea.sentence.TTMSentence#setSpeed()
-	 */
-	@Override
-	public void setSpeed(double speed) {
-		setDoubleValue(VESSEL_SPEED, speed, 1, 1);
-		setCharValue(UNITS, 'N');
-	}
-
-	@Override
-	public void setSpeedReference(String reference) {
-
-	}
-
-	@Override
-	public void getSet(double set) {
-
-	}
-
-	@Override
-	public void getDrift(double drift) {
-
-	}
-
-	@Override
-	public void setUnits(Units units) {
-
-	}
-
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see net.sf.marineapi.nmea.sentence.TTMSentence#setCourse()
-	 */
-	@Override
-	public void setCourse(double course) {
-		setDoubleValue(VESSEL_COURSE, course, 1, 1);
-		setCharValue(UNITS, 'T');
-	}
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see net.sf.marineapi.nmea.sentence.TTMSentence#setReference()
-	 */
-	@Override
-	public void setCourseReference(String reference) {
-		setStringValue(COURSE_REFERENCE, reference);
 	}
 }
