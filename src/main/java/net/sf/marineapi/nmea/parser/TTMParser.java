@@ -113,7 +113,7 @@ class TTMParser extends SentenceParser implements TTMSentence {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see net.sf.marineapi.nmea.sentence.TTMSentence#getNumber()
+	 * @see net.sf.marineapi.nmea.sentence.TTMSentence#getHeading()
 	 */
 	@Override
 	public int getNumber() {

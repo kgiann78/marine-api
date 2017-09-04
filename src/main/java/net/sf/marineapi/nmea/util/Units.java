@@ -43,7 +43,10 @@ public enum Units {
 	KNOT('N'),
 
 	/** Length in meter */
-	METER('M');
+	METER('M'),
+
+	/** Statute miles per hour */
+	STATUTE('S');
 
 	private char ch;
 

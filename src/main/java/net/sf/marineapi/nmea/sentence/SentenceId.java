@@ -83,6 +83,8 @@ public enum SentenceId {
 	RTE,
 	/** Tracked target */
 	TTM,
+	/** Own Ship Data */
+	OSD,
 	/** Dual ground/water speed and stern ground/water speed. */
 	VBW,
 	/** AIS - Received data from other vessels */
