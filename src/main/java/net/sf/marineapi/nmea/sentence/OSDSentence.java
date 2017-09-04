@@ -196,18 +196,11 @@ public interface OSDSentence {
      * Set the vessel set.
      * @param set The vessel set.
      */
-     void getSet(double set);
+     void setSet(double set);
 
     /**
      * Set vessel drift.
      * @param drift The vessel drift.
      */
-    void getDrift(double drift);
-
-    /**
-     * Get the unit of measure used for distance and speeds.
-     *
-     * @param units The unit of measure.
-     */
-     void setUnits(Units units);
+    void setDrift(double drift);
 }
