@@ -52,7 +52,7 @@ import net.sf.marineapi.nmea.util.Units;
 
  * @author Johan Bergkvist
  */
-public interface OSDSentence {
+public interface OSDSentence extends Sentence {
 
 	/**
 	 * Get the degrees of the heading to the true North.

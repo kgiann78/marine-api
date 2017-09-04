@@ -281,6 +281,7 @@ public final class SentenceFactory {
         registerParser("RTE", RTEParser.class);
         registerParser("RSA", RSAParser.class);
         registerParser("TTM", TTMParser.class);
+        registerParser("OSD", OSDParser.class);
         registerParser("VBW", VBWParser.class);
         registerParser("VDM", VDMParser.class);
         registerParser("VDO", VDOParser.class);
