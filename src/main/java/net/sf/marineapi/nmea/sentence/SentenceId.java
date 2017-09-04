@@ -80,6 +80,8 @@ public enum SentenceId {
 	/** Rudder angle, measured in degrees */
 	RSA,
 	/** Route data and waypoint list */
+	RSD,
+	/** Radar System Data */
 	RTE,
 	/** Tracked target */
 	TTM,
