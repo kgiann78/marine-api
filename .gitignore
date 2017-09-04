@@ -5,3 +5,4 @@
 target/
 *.iml
 .gradle
+.DS_Store
