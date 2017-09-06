@@ -43,16 +43,20 @@ public interface AISMessage19 extends AISPositionReportB {
 
 	/**
 	 * Returns the distance from the reference point to the bow.
+	 * @return the distance from the reference point to the bow.
 	 */
 	int getBow();
 
 	/**
 	 * Returns the distance from the reference point to the stern of the ship.
+	 * @return the distance from the reference point to the stern of the ship.
 	 */
 	int getStern();
 
 	/**
 	 * Returns the distance from the reference point to the port side of the
+	 * ship.
+	 * @return the distance from the reference point to the port side of the
 	 * ship.
 	 */
 	int getPort();

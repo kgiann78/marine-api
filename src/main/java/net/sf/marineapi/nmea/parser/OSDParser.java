@@ -28,7 +28,7 @@ import net.sf.marineapi.nmea.util.Units;
 /**
  * OSD sentence parser.
  *
- * @author Johan Bergkvist
+ * @author Konstantinos Giannousis
  */
 class OSDParser extends SentenceParser implements OSDSentence {
 

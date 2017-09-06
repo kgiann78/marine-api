@@ -44,7 +44,9 @@ public class SatelliteInfoEvent extends ProviderEvent {
 	private List<SatelliteInfo> info;
 
 	/**
-	 * @param source
+	 * @param source source object
+	 * @param gsa GSASentence
+	 * @param info list of SatelliteInfo objects
 	 */
 	public SatelliteInfoEvent(
 		Object source, GSASentence gsa, List<SatelliteInfo> info) {

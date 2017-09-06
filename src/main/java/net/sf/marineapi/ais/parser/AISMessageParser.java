@@ -70,6 +70,7 @@ public class AISMessageParser implements AISMessage {
 
 	/**
 	 * Add a new rule violation to this message
+	 * @param v the new rule violation to this message
 	 */
 	public void addViolation(Violation v) {
 		fViolations.add(v);
@@ -77,13 +78,15 @@ public class AISMessageParser implements AISMessage {
 
 	/**
 	 * Returns the number of violations.
+	 * @return the number of violations.
 	 */
 	public int getNrOfViolations() {
 		return fViolations.size();
 	}
 
 	/**
-	 * Returns list of discoverd data violations.
+	 * Returns list of discovered data violations.
+	 * @return the list of discovered data violations.
 	 */
 	public List<Violation> getViolations() {
 		return fViolations;

@@ -46,21 +46,25 @@ public interface AISMessage21 extends AISPositionInfo {
 
     /**
      * Returns the distance from the reference point to the bow.
+     * @return the distance from the reference point to the bow.
      */
     int getBow();
 
     /**
      * Returns the distance from the reference point to the stern of the ship.
+     * @return the distance from the reference point to the stern of the ship.
      */
     int getStern();
 
     /**
      * Returns the distance from the reference point to the port side of the ship.
+     * @return the distance from the reference point to the port side of the ship.
      */
     int getPort();
 
     /**
      * Returns the distance from the reference point to the starboard side of the ship.
+     * @return the distance from the reference point to the starboard side of the ship.
      */
     int getStarboard();
 
@@ -78,6 +82,7 @@ public interface AISMessage21 extends AISPositionInfo {
 
     /**
      * Returns the Off-position indicator.
+     * @return the Off-position indicator.
      */
     boolean getOffPositionIndicator();
 
@@ -89,16 +94,19 @@ public interface AISMessage21 extends AISPositionInfo {
 
     /**
      * Returns the RAIM flag
+     * @return the RAIM flag
      */
     boolean getRAIMFlag();
 
     /**
      * Returns the Virtual-aid flag
+     * @return the Virtual-aid flag
      */
     boolean getVirtualAidFlag();
 
     /**
      * Returns the Assigned-mode flag
+     * @return the Assigned-mode flag
      */
     boolean getAssignedModeFlag();
 

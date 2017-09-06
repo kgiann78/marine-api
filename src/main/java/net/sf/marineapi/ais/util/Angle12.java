@@ -37,6 +37,7 @@ public class Angle12 {
 			"[" + MINVALUE + "," + MAXVALUE + "] + {" + DEFAULTVALUE + "}";
 	
 	/**
+	 * @param value the value to validate
 	 * @return true if the value is correct
 	 */
 	public static boolean isCorrect(int value) {
@@ -45,6 +46,7 @@ public class Angle12 {
 	
 	/**
 	 * Checks if the angular value is available.
+	 * @param value the value to check
 	 * @return true if the angular is not the default value
 	 */
 	public static boolean isAvailable(int value) {
@@ -53,6 +55,7 @@ public class Angle12 {
 	
 	/**
 	 * Converts the angular value (in 1/10 degrees) to degrees.
+	 * @param value the value to convert
 	 * @return the angular  in degrees
 	 */
 	public static double toDegrees(int value) {
@@ -60,6 +63,7 @@ public class Angle12 {
 	}
 
 	/**
+	 * @param value the value to represent
 	 * @return a string representing the angular value
 	 */
 	public static String toString(int value) {

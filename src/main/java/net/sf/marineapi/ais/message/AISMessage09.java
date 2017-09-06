@@ -35,7 +35,7 @@ public interface AISMessage09 extends AISPositionInfo {
      * Returns the Altitude of the aircraft
      * Altitude is in meters. The special value 4095 indicates altitude is not available;
      * 4094 indicates 4094 meters or higher.
-     * @return
+     * @return the Altitude of the aircraft
      */
     int getAltitude();
 
@@ -43,13 +43,13 @@ public interface AISMessage09 extends AISPositionInfo {
      * Returns the speed over ground.
      * Speed over ground is in knots, not deciknots as in the common navigation block; planes go faster.
      * The special value 1023 indicates speed not available, 1022 indicates 1022 knots or higher.
-     * @return
+     * @return the speed over ground.
      */
     int getSpeedOverGround();
 
     /**
      * Returns the course over ground.
-     * @return
+     * @return the course over ground.
      */
     int getCourseOverGround();
 
@@ -61,23 +61,25 @@ public interface AISMessage09 extends AISPositionInfo {
 
     /**
      * Returns the DTE
-     * @return
+     * @return the DTE
      */
     boolean getDTEFlag();
 
     /**
      * Returns the Assigned-mode flag
-     * @return
+     * @return the Assigned-mode flag
      */
     boolean getAssignedModeFlag();
 
     /**
      * Returns the RAIM flag
+     * @return the RAIM flag
      */
     boolean getRAIMFlag();
 
     /**
      * Returns the Radio status
+     * @return the Radio status
      */
     int getRadioStatus();
 }

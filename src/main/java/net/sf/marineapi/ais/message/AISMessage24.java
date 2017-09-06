@@ -55,11 +55,13 @@ public interface AISMessage24 extends AISMessage {
 
     /**
      * Returns the Unit Model code
+     * @return the Unit Model code
      */
     int getUnitModelCode();
 
     /**
      * Returns the Serial Number
+     * @return the Serial Number
      */
     int getSerialNumber();
 
@@ -71,21 +73,25 @@ public interface AISMessage24 extends AISMessage {
 
     /**
      * Returns the distance from the reference point to the bow.
+     * @return the distance from the reference point to the bow.
      */
     int getBow();
 
     /**
      * Returns the distance from the reference point to the stern of the ship.
+     * @return the distance from the reference point to the stern of the ship.
      */
     int getStern();
 
     /**
      * Returns the distance from the reference point to the port side of the ship.
+     * @return the distance from the reference point to the port side of the ship.
      */
     int getPort();
 
     /**
      * Returns the distance from the reference point to the starboard side of the ship.
+     * @return the distance from the reference point to the starboard side of the ship.
      */
     int getStarboard();
 

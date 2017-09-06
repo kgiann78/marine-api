@@ -59,25 +59,25 @@ public interface AISMessage05 extends AISMessage {
 
 	/**
 	 * Returns the distance from the reference point to the bow.
-	 * @return
+	 * @return the distance from the reference point.
 	 */
 	int getBow();
 
 	/**
 	 * Returns the distance from the reference point to the stern of the ship.
-	 * @return
+	 * @return the distance from the reference point.
 	 */
 	int getStern();
 
 	/**
 	 * Returns the distance from the reference point to the port side of the ship.
-	 * @return
+	 * @return the distance from the reference point to the port side of the ship.
 	 */
 	int getPort();
 
 	/**
 	 * Returns the distance from the reference point to the starboard side of the ship.
-	 * @return
+	 * @return the distance from the reference point.
 	 */
 	int getStarboard();
 

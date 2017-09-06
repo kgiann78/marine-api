@@ -29,21 +29,25 @@ public interface AISPositionReportB extends AISPositionInfo {
 
 	/**
 	 * Returns the speed over ground.
+	 * @return the speed over ground.
 	 */
 	int getSpeedOverGround();
 
 	/**
 	 * Returns the course over ground.
+	 * @return the course over ground.
 	 */
 	int getCourseOverGround();
 
 	/**
 	 * Returns the true heading.
+	 * @return the true heading.
 	 */
 	int getTrueHeading();
 
 	/**
 	 * Returns the time stamp contained in the message.
+	 * @return the time stamp contained in the message.
 	 */
 	int getTimeStamp();
 }

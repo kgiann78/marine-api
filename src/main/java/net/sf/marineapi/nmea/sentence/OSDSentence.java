@@ -50,7 +50,7 @@ import net.sf.marineapi.nmea.util.Units;
 	 8. Vessel drift (speed)
 	 9. Speed Units
 
- * @author Johan Bergkvist
+ * @author Konstantinos Giannousis
  */
 public interface OSDSentence extends Sentence {
 

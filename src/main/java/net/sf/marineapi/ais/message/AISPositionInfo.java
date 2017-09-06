@@ -29,19 +29,19 @@ interface AISPositionInfo extends AISMessage {
 	
     /**
 	 * Returns the position accuracy.
-	 * @return
+	 * @return the position accuracy
 	 */
 	boolean getPositionAccuracy();
 
 	/**
 	 * Returns the longitude in degrees.
-	 * @return
+	 * @return the longitude in degrees.
 	 */
 	double getLongitudeInDegrees();
 	
 	/**
 	 * Returns the latitude in degrees.
-	 * @return
+	 * @return the latitude in degrees.
 	 */
 	double getLatitudeInDegrees();
 }
