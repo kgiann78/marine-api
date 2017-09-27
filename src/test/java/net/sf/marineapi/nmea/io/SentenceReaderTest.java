@@ -128,6 +128,7 @@ public class SentenceReaderTest {
 	}
 
 	@Test
+	@Ignore
 	public void testStartAndStop() {
 		try {
 			assertNull(sentence);
