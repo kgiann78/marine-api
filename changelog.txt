@@ -3,10 +3,31 @@ Java Marine API - changelog
 
 Version 0.11.0-SNAPSHOT
 
-  - Support for $STALK sentences; the NMEA layer of Raymarine SeaTalk protocol.
+  - Support for GBS sentences; GNSS satellite fault detection
+  - Support for GST sentences; GPS Pseudorange Noise Statistics
+  - Support for HTC sentences; Heading/Track control command
+  - Support for HTD sentences; Heading/Track control data
+  - Support for TXT sentences; Text messages, e.g. device boot screens etc.
+  - Support for $STALK sentences; NMEA-0183 layer of Raymarine SeaTalk protocol.
+  - AbstracSentenceListener; improvements in generic types resolving to support
+      more advanced use of generics and inheritance.
   - RPMSentence; added missing RPM setter
   - ROTSentence; negative rate of turn values are now allowed. Also, the value
     may now exceed -/+360 degrees.
+  - GLLSentence; added support for FAA mode field (NMEA v3.0)
+  - Improvements in AIS message parsers
+    - added tests for all current message parsers
+    - speed, course and heading values now converted in actual double values in
+      messages 1-3, 5, 9, 18 and 19.
+    - names and call signs are now trimmed in messages 5 and 21
+    - fixed six-bit vector indexing bugs in message 5
+
+  Contributions:
+  - GST parser by Tero Laitinen (@tlaitinen)
+  - AbstractSentenceListener improvements by Axel Uhl (@axeluhl)
+  - HTC and HTD parsers by Paweł Kozioł (@pkoziol)
+  - AIS validation improvements by Jyrki Jakobsson
+  - SentenceReader improvements by Martin Wegner & Michael Skogberg
 
 Version 0.10.0 (2017-06-21)
 

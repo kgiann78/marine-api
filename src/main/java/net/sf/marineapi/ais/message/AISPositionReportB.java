@@ -31,13 +31,13 @@ public interface AISPositionReportB extends AISPositionInfo {
 	 * Returns the speed over ground.
 	 * @return the speed over ground.
 	 */
-	int getSpeedOverGround();
+	double getSpeedOverGround();
 
 	/**
 	 * Returns the course over ground.
 	 * @return the course over ground.
 	 */
-	int getCourseOverGround();
+	double getCourseOverGround();
 
 	/**
 	 * Returns the true heading.
@@ -50,4 +50,24 @@ public interface AISPositionReportB extends AISPositionInfo {
 	 * @return the time stamp contained in the message.
 	 */
 	int getTimeStamp();
+
+	/**
+	 * Returns true if speed over ground is available in the message.
+	 */
+	boolean hasSpeedOverGround();
+
+	/**
+	 * Returns true if course over ground is available in the message.
+	 */
+	boolean hasCourseOverGround();
+
+	/**
+	 * Returns true if true heading is available in the message.
+	 */
+	boolean hasTrueHeading();
+
+	/**
+	 * Returns true if timestamp is available in the message.
+	 */
+	boolean hasTimeStamp();
 }

@@ -37,19 +37,19 @@ public interface AISPositionReport extends AISPositionInfo {
 	 * Returns the rate of turn.
 	 * @return the rate of turn.
 	 */
-	int getRateOfTurn();
+	double getRateOfTurn();
 
 	/**
 	 * Returns the speed over ground.
 	 * @return the speed over ground.
 	 */
-	int getSpeedOverGround();
+	double getSpeedOverGround();
 
 	/**
 	 * Returns the course over ground.
 	 * @return the course over ground.
 	 */
-	int getCourseOverGround();
+	double getCourseOverGround();
 
 	/**
 	 * Returns the true heading.
@@ -68,4 +68,29 @@ public interface AISPositionReport extends AISPositionInfo {
 	 * @return the manouver indicator.
 	 */
 	int getManouverIndicator();
+
+	/**
+	 * Returns true if rate of turn is available in the message.
+	 */
+	boolean hasRateOfTurn();
+
+	/**
+	 * Returns true if speed over ground is available in the message.
+	 */
+	boolean hasSpeedOverGround();
+
+	/**
+	 * Returns true if course over ground is available in the message.
+	 */
+	boolean hasCourseOverGround();
+
+	/**
+	 * Returns true if true heading is available in the message.
+	 */
+	boolean hasTrueHeading();
+
+	/**
+	 * Returns true if timestamp is available in the message.
+	 */
+	boolean hasTimeStamp();
 }

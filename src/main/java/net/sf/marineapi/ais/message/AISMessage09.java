@@ -51,7 +51,7 @@ public interface AISMessage09 extends AISPositionInfo {
      * Returns the course over ground.
      * @return the course over ground.
      */
-    int getCourseOverGround();
+    double getCourseOverGround();
 
     /**
      * Returns the UTC second.
